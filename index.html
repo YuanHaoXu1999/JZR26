@@ -1,161 +1,100 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
     <title>生日快乐送给我的宝宝姜止柔</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    
+    <meta name="viewport" charset="utf-8" content="width=device-width,
+    initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=1.0">
     <link rel="stylesheet" href="css/app.css">
-    <audio id="bgm" src="https://yuanhaoxu1999.github.io/JZR26/css/lovesong.mp3" loop="loop" preload="auto"></audio>
-    
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>
-
-    <style>
-        /* 这里的颜色改为兼容性更好的深粉色 */
-        .pink-text { color: #db5a6b !important; }
-        
-        /* 核心：毛玻璃背景模糊效果 */
-        .pageview {
-            position: relative;
-            overflow: hidden;
-            background-color: #000; /* 防止图片没加载出来时全白 */
-        }
-
-        .pageview::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: inherit;
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* 模糊强度，可以根据喜好调成 5px 或 10px */
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-            /* 放大 1.1 倍消除边缘白边 */
-            transform: scale(1.1);
-            z-index: 0;
-        }
-
-        /* 确保文字内容在模糊层之上，保持清晰 */
-        .pagecontent {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-        }
-    </style>
+    <audio id="bgm" src="css/love song.mp3" loop="loop"></audio>
 </head>
 
 <body>
     <div class="container">
         <div id="pageloading">
-            <center style="margin-top: 50%;">
+            <center>
                 <img src="images/loading.gif" style="width: 20%;">
-                <h2 style="font-size: 14px;" class="pink-text">疯狂加载中。。。</h2>
+                <h2 style="font-size: 10px;color: lab(29.19% 51.48 12.6)">疯狂加载中。。。</h2>
             </center>
         </div>        
-        
         <div id="viewport" class="viewport">
-            <div class="pageview" style="background-image: url(images/img01.jpg);">
+            <div class="pageview"
+                style="background-image: url(images/img01.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
                 <center class="pagecontent">
-                    <h1 style="font-size: 50px;" class="pink-text">生日快乐</h1>
-                    <h2 style="font-size: 45px;" class="pink-text">姜止柔</h2>
-                    <h3 style="font-size: 30px;" class="pink-text">By: 徐元浩</h3>
+                    <h1 style="font-size: 50px;color: lab(29.19% 51.48 12.6)">生日快乐</h1>
+                    <h2 style="font-size: 45px;color:lab(29.19% 51.48 12.6)">姜止柔</h2>
+                    <h3 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">By: 徐元浩</h3>
                 </center>
             </div>
-
-            <div class="pageview" style="background-image: url(images/img02.jpg);">
+            <div class="pageview"
+                style="background-image: url(images/img02.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
                 <center class="pagecontent">
-                    <h1 style="font-size: 30px;" class="pink-text">"和你在一起回国第一时间来到广州"</h1>
-                    <h2 style="font-size: 20px;" class="pink-text">2025年五月份<br>“第一次看你看过的广州塔”</h2>
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"和你在一起回国第一时间来到广州"</h1>
+                    <h2 style="font-size: 20px;color:lab(29.19% 51.48 12.6)">2025年五月份<br>“第一次看你看过的广州塔”</h2>
                 </center>
             </div>
-
-            <div class="pageview" style="background-image: url(images/img03.jpg);">
+            <div class="pageview"
+                style="background-image: url(images/img03.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
                 <center class="pagecontent">
-                    <h1 style="font-size: 30px;" class="pink-text">"回南昌之后你教我怎么配好喝的"</h1>
-                    <h2 style="font-size: 20px;" class="pink-text">一起玩fivm<br>"开车带你一路修车"</h2>
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"回南昌之后你教我怎么配好喝的"</h1>
+                    <h2 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">一起玩fivm<br>"开车带你一路修车"</h2>
                 </center>
             </div>
-
-            <div class="pageview" style="background-image: url(images/img04.jpg);">
+            <div class="pageview"
+                style="background-image: url(images/img04.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
                 <center class="pagecontent">
-                    <h1 style="font-size: 30px;" class="pink-text">"第一次贴面膜"</h1>
-                    <h2 style="font-size: 20px;" class="pink-text">给你拍的成果<br>还记得你那天笑的不行<br>我也是很开心没错啊</h2>
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"第一次贴面膜"</h1>
+                    <h2 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">给你拍的成果<br>还记得你那天笑的不行<br>我也是很开心没错啊</h2>
                 </center>
             </div>
-
-            <div class="pageview" style="background-image: url(images/img05.jpg);">
+            <div class="pageview"
+                style="background-image: url(images/img05.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
                 <center class="pagecontent">
-                    <h1 style="font-size: 30px;" class="pink-text">"这是在鼓浪屿"</h1>
-                    <h2 style="font-size: 20px;" class="pink-text">我们一起看日出<br>那天你陪我直播<br>我一路跋山涉水感谢姜女士的跑车<br><br>\(^。^)/</h2>
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"这是在鼓浪屿"</h1>
+                    <h2 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">
+                        我们一起看日出<br>那天你陪我直播<br>我一路跋山涉水感谢姜女士的跑车<br><br><br><br>\(^。^)/</h2>
                 </center>
             </div>
-
-            <div class="pageview" style="background-image: url(images/img06.jpg);">
+            <div class="pageview"
+                style="background-image: url(images/img06.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
                 <center class="pagecontent">
-                    <h1 style="font-size: 30px;" class="pink-text">"第一次陪你玩你喜欢的游戏"</h1>
-                    <h2 style="font-size: 20px;" class="pink-text">这个衣服好好看<br>是我宝宝送我的<br>我们因为这个游戏经常拌嘴</h2>
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"第一次陪你一起玩你喜欢玩的游戏"</h1>
+                    <h2 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">这个衣服好好看<br>是我宝宝送我的<br>我们因为这个游戏经常拌嘴</h2>
                 </center>
             </div>
-
-            <div class="pageview" style="background-image: url(images/img07.jpg);">
+            <div class="pageview"
+                style="background-image: url(images/img07.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
                 <center class="pagecontent">
-                    <h1 style="font-size: 30px;" class="pink-text">"开了寿司店"</h1>
-                    <h2 style="font-size: 20px;" class="pink-text">第一次开店<br>我的宝宝给我提供了很多意见<br>"我们一起面对解决了很多问题"<br><br>多亏了我的老婆</h2>
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"开了寿司店</h1>
+                    <h2 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">
+                        第一次开店<br>我的宝宝给我提供了很多意见<br>"我们一起面对解决了很多问题"<br><br><br>多亏了我的老婆</h2>
+            
+            <div class="pageview"
+                style="background-image: url(images/img07.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
+                <center class="pagecontent">
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"开了寿司店</h1>
+                    <h2 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">
+                        第一次开店<br>我的宝宝给我提供了很多意见<br>"我们一起面对解决了很多问题"<br><br><br>多亏了我的老婆</h2>
                 </center>
             </div>
-
-            <div class="pageview" style="background-image: url(images/img08.jpg);">
-                <center style="margin-top: 20%" class="pagecontent">
-                    <h1 style="font-size: 30px;" class="pink-text">"生日快乐!"</h1>
-                    <h2 style="font-size: 20px;" class="pink-text">24岁的姜止柔<br>耶耶耶<br>我是小虎<br><br>很感谢这一年你一直陪着我<br><br>你在我的眼里<br>永远天真烂漫<br>^_^</h2>
-                    <h3 style="font-size: 20px;" class="pink-text">2026-03-23</h3>
+            <div class="pageview"
+                style="background-image: url(images/img08.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 100%;">
+                <center style="margin-top: 20%">
+                    <h1 style="font-size: 30px;color: lab(29.19% 51.48 12.6)">"生日快乐!"</h1>
+                    <h2 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">24岁的姜止柔
+                        耶耶耶<br>我是小虎<br><br>很感谢这一年你一直陪着我<br><br>你在我的眼里<br>永远天真烂漫<br>^_^</h2>
+                    <h3 style="font-size: 20px;color: lab(29.19% 51.48 12.6)">2026-03-23</h3>
                 </center>
             </div>
         </div>
-
         <div id="pagenumber" class="pagenumber">
-            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div>
+            <div></div>
         </div>
-
-        <a href="javascript:void(0);" onclick="togglePlay()">
-            <img src="images/pause.png" width="40" id="playbtn" border="0">
-        </a>
+        <a href="javascript:play();"><img src="images/pause.png" width="7%" id="playbtn" border="0"></a>
     </div>
-
-    <script>
-        var music = document.getElementById('bgm');
-        var music_btn = document.getElementById('playbtn');
-
-        function togglePlay() {
-            if (music.paused) {
-                music.play();
-                music_btn.style.opacity = "1";
-            } else {
-                music.pause();
-                music_btn.style.opacity = "0.2";
-            }
-        }
-
-        // 只要点击或触摸屏幕，音乐就会开始（突破浏览器限制）
-        document.addEventListener('touchstart', function() {
-            if (music.paused) music.play();
-        }, { once: true });
-        document.addEventListener('click', function() {
-            if (music.paused) music.play();
-        }, { once: true });
-
-        // 模拟加载完成并撒花
-        window.onload = function() {
-            setTimeout(function() {
-                document.getElementById('pageloading').style.display = 'none';
-                if(typeof confetti === 'function') {
-                    confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
-                }
-            }, 1500);
-        };
-    </script>
 </body>
+
 </html>
